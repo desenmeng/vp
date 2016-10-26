@@ -1,10 +1,3 @@
-vp
-==
-
-simple serial tools
-
-
-```js
 const delay = number => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -24,10 +17,9 @@ const items = [1, 2, 3, 4, 5];
 co(function*() {
     console.time('time');
     try{
-        yield vp(items, delay); // will serial execution
+        yield vp(items, delay);
     }catch (e){
         console.log(e);
     }
     console.timeEnd('time');
 });
-```
