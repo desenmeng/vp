@@ -21,6 +21,7 @@ const vp = require('../');
 const co = require('co');
 const items = [1, 2, 3, 4, 5];
 
+∏
 co(function*() {
     console.time('time');
     try{
