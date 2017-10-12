@@ -31,10 +31,6 @@ co(function*() {
             yield delay(i);
         }
         //并行
-        items.map(function*(i){
-             return yield delay(i);
-        });
-        //并行
         yield items.map(function*(i){
             return yield delay(i);
         });
